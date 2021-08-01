@@ -101,3 +101,64 @@ margin: 13rem auto;
 	width: 23rem;
 	box-shadow: 1px 20px 30px rgba(41, 39, 39, 0.25);
 }
+
+.content__button {
+	display: flex;
+	margin-top: 2rem;
+}
+
+.content__button:link,
+.content__button:visited
+{
+
+	border-radius: 64px;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	font-family: 'Lato';
+	font-size: 15px;
+	margin-right: 1rem;
+	padding: 1.2em 0;
+	/* transition: background 0.4s linear, border 0.4s linear; */
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .2s;
+	width: 15rem;
+	position: relative;
+
+}
+
+.btn-info {
+	background-color:  #33646E;
+	color: #fff;
+}
+
+.btn-buy {
+	background: transparent;
+	color:#33646E;
+	border: 1px solid #33646E;
+}
+
+.btn-info:hover {
+	background-color:  #264a52;
+	transform: translateY(-3px);
+	box-shadow:0 10px 20px rgba(0, 0, 0, 0.109) ;
+
+
+}
+
+.btn-info:active {
+	transform: translateY(1px);
+	box-shadow:0 5px 10px rgba(0, 0, 0, 0.274) ;
+}
+
+.btn-buy:hover {
+	transform: translateY(-3px);
+	box-shadow:0 10px 20px rgba(0, 0, 0, 0.123) ;
+}
+
+.btn-buy:active {
+	transform: translateY(-1px);
+	box-shadow:0 5px 10px rgba(0, 0, 0, 0.274) ;
+}
