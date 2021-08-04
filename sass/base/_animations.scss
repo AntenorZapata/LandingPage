@@ -1,0 +1,12 @@
+@keyframes fade {
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideLeft {
+	to {
+		opacity: 1;
+		transform: translateX(0)
+	}
+}

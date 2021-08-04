@@ -7,13 +7,6 @@
     opacity: 1;
     transform: translateX(0); } }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 body {
   color: #777;
   font-family: "Lato", sans-serif;
@@ -21,20 +14,6 @@ body {
   font-size: 16px;
   line-height: 1.7;
   padding: 1.8rem; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, #cabec6fa, rgba(169, 197, 181, 0.856)), url("../img/header.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  padding-top: .1rem; }
-  .header .logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px; }
-    .header .logo-box img {
-      height: 150px; }
 
 .content {
   display: flex;
@@ -76,6 +55,16 @@ body {
   width: 23rem;
   box-shadow: 1px 20px 30px rgba(41, 39, 39, 0.25); }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
 .content__button {
   display: flex;
   margin-top: 1.5rem;
@@ -116,3 +105,17 @@ body {
     .content__button .btn-buy:active {
       transform: translateY(-1px);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.274); }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #cabec6fa, rgba(169, 197, 181, 0.856)), url("../img/header.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  padding-top: .1rem; }
+  .header .logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+    .header .logo-box img {
+      height: 150px; }

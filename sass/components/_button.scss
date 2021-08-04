@@ -1,0 +1,58 @@
+.content__button {
+	display: flex;
+	margin-top: 1.5rem;
+	opacity: 0;
+	animation: fade .5s ease-in forwards;
+
+	&:link,
+	&:visited
+	{
+		border-radius: 64px;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 400;
+		font-family: 'Lato';
+		font-size: 15px;
+		margin-right: 1rem;
+		padding: 1.2em 0;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: all .2s;
+		width: 15rem;
+		position: relative;
+
+	}
+
+	.btn-info {
+		background-color:  $btn-color;
+		color: $color-white;
+
+		&:hover {
+			background-color:  #264a52;
+			transform: translateY(-3px);
+			box-shadow:0 10px 20px $black-shaddow;
+		}
+
+		&:active {
+			transform: translateY(1px);
+			box-shadow:0 5px 10px $black-shaddow;
+		}
+	}
+
+	.btn-buy {
+		background: transparent;
+		color:$btn-color;
+		border: 1px solid $btn-color;
+
+			&:hover {
+				transform: translateY(-3px);
+				box-shadow:0 10px 20px $black-shaddow;
+			}
+
+			&:active {
+				transform: translateY(-1px);
+				box-shadow:0 5px 10px $black-shaddow;
+			}
+	}
+}
