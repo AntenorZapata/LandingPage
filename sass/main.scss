@@ -1,11 +1,31 @@
 
+// Variables
 $color-text: #4d6164df;
 $primary-pink:  #cabec6fa;
 $primary-green: rgba(169, 197, 181, 0.856);
 $body-color: #777;
 $btn-color:#33646E;
 $color-white: #fff;
+$bg-prink: #88597bef;
+$bg-green: rgba(49, 88, 66, 0.651);
+$dark-grey: rgba(56, 59, 59, 0.753);
+$black-shaddow: rgba(0, 0, 0, 0.274);
 
+// Animation
+@keyframes fade {
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideLeft {
+	to {
+		opacity: 1;
+		transform: translateX(0)
+	}
+}
+
+// Reset
 *,
 *::after,
 *::before {
@@ -13,6 +33,7 @@ $color-white: #fff;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 
 body {
 	color: $body-color;
@@ -31,40 +52,35 @@ body {
 	background-position: top;
 	position: relative;
 	padding-top: .1rem;
+
+	.logo-box {
+		position: absolute;
+		top: 40px;
+		left: 40px;
+
+		& img {
+			height: 150px;
+		}
+	}
 }
 
-.logo-box {
-position: absolute;
-top: 40px;
-left: 40px;
-}
-
-.logo-box__img {
-	height: 150px;
-}
 
 .content {
 display: flex;
 justify-content: space-around;
 width: 75%;
 margin: 13rem auto;
-}
-/* background: -webkit-linear-gradient(#915c81, rgba(49, 88, 66, 0.651)); */
 
-
-.content__title  {
-	background: -webkit-linear-gradient(#88597bef, rgba(74, 92, 95, 0.719));
-/* background: -webkit-linear-gradient(#47595cd5, #a05e8d); */
-		// color: #4d6164df;
-	color: $color-text;
-  -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
-	-moz-background-clip:border-box;
-	background-clip: transparent;
-	font-size: 100px;
-	font-weight: 900;
-	line-height: 1.13;
-
+	.content__title  {
+		background: -webkit-linear-gradient($bg-prink, $bg-green);
+		color: $color-text;
+		-webkit-background-clip: text;
+		-moz-background-clip:border-box;
+		background-clip: transparent;
+		font-size: 100px;
+		font-weight: 900;
+		line-height: 1.13;
+	}
 }
 
 .content__title__container h1 span {
@@ -75,6 +91,7 @@ margin: 13rem auto;
 .content__title__container h1 span:nth-of-type(1) {
 	animation-delay: .5s;
 }
+
 .content__title__container h1 span:nth-of-type(2) {
 	animation-delay: 1.5s;
 }
@@ -83,27 +100,13 @@ margin: 13rem auto;
 	animation-delay: 2s;
 }
 
-
-@keyframes fade {
-	to {
-		opacity: 1;
-	}
-}
-
 .content__description {
 	font-size: 1.6rem;
 	margin-top: 2rem;
-	color: rgba(49, 45, 49, 0.671);
+	color: $dark-grey;
 	opacity: 0;
 	transform: translateX(-50px);
 	animation: slideLeft 2s ease-out 1.5s forwards;
-}
-
-@keyframes slideLeft {
-	to {
-		opacity: 1;
-		transform: translateX(0)
-	}
 }
 
 .content__book {
@@ -114,63 +117,58 @@ margin: 13rem auto;
 .content__button {
 	display: flex;
 	margin-top: 1.5rem;
-}
-
-.content__button {
 	opacity: 0;
 	animation: fade .5s ease-in forwards;
-}
 
-.content__button:link,
-.content__button:visited
-{
-	border-radius: 64px;
-	cursor: pointer;
-	display: inline-block;
-	font-weight: 400;
-	font-family: 'Lato';
-	font-size: 15px;
-	margin-right: 1rem;
-	padding: 1.2em 0;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	transition: all .2s;
-	width: 15rem;
-	position: relative;
+	&:link,
+	&:visited
+	{
+		border-radius: 64px;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 400;
+		font-family: 'Lato';
+		font-size: 15px;
+		margin-right: 1rem;
+		padding: 1.2em 0;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: all .2s;
+		width: 15rem;
+		position: relative;
 
-}
+	}
 
-.btn-info {
-	background-color:  $btn-color;
-	color: $color-white;
-}
+	.btn-info {
+		background-color:  $btn-color;
+		color: $color-white;
 
-.btn-buy {
-	background: transparent;
-	color:$btn-color;
-	border: 1px solid $btn-color;
-}
+		&:hover {
+			background-color:  #264a52;
+			transform: translateY(-3px);
+			box-shadow:0 10px 20px $black-shaddow;
+		}
 
-.btn-info:hover {
-	background-color:  #264a52;
-	transform: translateY(-3px);
-	box-shadow:0 10px 20px rgba(0, 0, 0, 0.109) ;
+		&:active {
+			transform: translateY(1px);
+			box-shadow:0 5px 10px $black-shaddow;
+		}
+	}
 
+	.btn-buy {
+		background: transparent;
+		color:$btn-color;
+		border: 1px solid $btn-color;
 
-}
+			&:hover {
+				transform: translateY(-3px);
+				box-shadow:0 10px 20px $black-shaddow;
+			}
 
-.btn-info:active {
-	transform: translateY(1px);
-	box-shadow:0 5px 10px rgba(0, 0, 0, 0.274) ;
-}
-
-.btn-buy:hover {
-	transform: translateY(-3px);
-	box-shadow:0 10px 20px rgba(0, 0, 0, 0.123) ;
-}
-
-.btn-buy:active {
-	transform: translateY(-1px);
-	box-shadow:0 5px 10px rgba(0, 0, 0, 0.274) ;
+			&:active {
+				transform: translateY(-1px);
+				box-shadow:0 5px 10px $black-shaddow;
+			}
+	}
 }

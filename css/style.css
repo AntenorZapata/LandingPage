@@ -1,3 +1,12 @@
+@keyframes fade {
+  to {
+    opacity: 1; } }
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
 *,
 *::after,
 *::before {
@@ -20,33 +29,27 @@ body {
   background-position: top;
   position: relative;
   padding-top: .1rem; }
-
-.logo-box {
-  position: absolute;
-  top: 40px;
-  left: 40px; }
-
-.logo-box__img {
-  height: 150px; }
+  .header .logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+    .header .logo-box img {
+      height: 150px; }
 
 .content {
   display: flex;
   justify-content: space-around;
   width: 75%;
   margin: 13rem auto; }
-
-/* background: -webkit-linear-gradient(#915c81, rgba(49, 88, 66, 0.651)); */
-.content__title {
-  background: -webkit-linear-gradient(#88597bef, rgba(74, 92, 95, 0.719));
-  /* background: -webkit-linear-gradient(#47595cd5, #a05e8d); */
-  color: #4d6164df;
-  -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
-  -moz-background-clip: border-box;
-  background-clip: transparent;
-  font-size: 100px;
-  font-weight: 900;
-  line-height: 1.13; }
+  .content .content__title {
+    background: -webkit-linear-gradient(#88597bef, rgba(49, 88, 66, 0.651));
+    color: #4d6164df;
+    -webkit-background-clip: text;
+    -moz-background-clip: border-box;
+    background-clip: transparent;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1.13; }
 
 .content__title__container h1 span {
   opacity: 0;
@@ -61,22 +64,13 @@ body {
 .content__title__container h1 span:nth-of-type(3) {
   animation-delay: 2s; }
 
-@keyframes fade {
-  to {
-    opacity: 1; } }
-
 .content__description {
   font-size: 1.6rem;
   margin-top: 2rem;
-  color: rgba(49, 45, 49, 0.671);
+  color: rgba(56, 59, 59, 0.753);
   opacity: 0;
   transform: translateX(-50px);
   animation: slideLeft 2s ease-out 1.5s forwards; }
-
-@keyframes slideLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0); } }
 
 .content__book {
   width: 23rem;
@@ -84,51 +78,41 @@ body {
 
 .content__button {
   display: flex;
-  margin-top: 1.5rem; }
-
-.content__button {
+  margin-top: 1.5rem;
   opacity: 0;
   animation: fade .5s ease-in forwards; }
-
-.content__button:link,
-.content__button:visited {
-  border-radius: 64px;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 400;
-  font-family: 'Lato';
-  font-size: 15px;
-  margin-right: 1rem;
-  padding: 1.2em 0;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all .2s;
-  width: 15rem;
-  position: relative; }
-
-.btn-info {
-  background-color: #33646E;
-  color: #fff; }
-
-.btn-buy {
-  background: transparent;
-  color: #33646E;
-  border: 1px solid #33646E; }
-
-.btn-info:hover {
-  background-color: #264a52;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.109); }
-
-.btn-info:active {
-  transform: translateY(1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.274); }
-
-.btn-buy:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.123); }
-
-.btn-buy:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.274); }
+  .content__button:link, .content__button:visited {
+    border-radius: 64px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Lato';
+    font-size: 15px;
+    margin-right: 1rem;
+    padding: 1.2em 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .2s;
+    width: 15rem;
+    position: relative; }
+  .content__button .btn-info {
+    background-color: #33646E;
+    color: #fff; }
+    .content__button .btn-info:hover {
+      background-color: #264a52;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.274); }
+    .content__button .btn-info:active {
+      transform: translateY(1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.274); }
+  .content__button .btn-buy {
+    background: transparent;
+    color: #33646E;
+    border: 1px solid #33646E; }
+    .content__button .btn-buy:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.274); }
+    .content__button .btn-buy:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.274); }
