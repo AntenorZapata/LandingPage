@@ -4,6 +4,7 @@ $primary-pink:  #cabec6fa;
 $primary-green: rgba(169, 197, 181, 0.856);
 $body-color: #777;
 $btn-color:#33646E;
+$color-white: #fff;
 
 *,
 *::after,
@@ -54,7 +55,8 @@ margin: 13rem auto;
 .content__title  {
 	background: -webkit-linear-gradient(#88597bef, rgba(74, 92, 95, 0.719));
 /* background: -webkit-linear-gradient(#47595cd5, #a05e8d); */
-		color: #4d6164df;
+		// color: #4d6164df;
+	color: $color-text;
   -webkit-background-clip: text;
   /* -webkit-text-fill-color: transparent; */
 	-moz-background-clip:border-box;
@@ -140,14 +142,14 @@ margin: 13rem auto;
 }
 
 .btn-info {
-	background-color:  #33646E;
-	color: #fff;
+	background-color:  $btn-color;
+	color: $color-white;
 }
 
 .btn-buy {
 	background: transparent;
-	color:#33646E;
-	border: 1px solid #33646E;
+	color:$btn-color;
+	border: 1px solid $btn-color;
 }
 
 .btn-info:hover {
