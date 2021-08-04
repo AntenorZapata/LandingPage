@@ -1,0 +1,55 @@
+.section-topics {
+	background-color: $light-grey-1;
+	padding: 25rem 0;
+	margin-top: -32vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.topics__title {
+		text-align: center;
+	}
+
+	.topics__container {
+		margin-top: 5rem;
+		width: 80%;
+		display: grid;
+		grid-template-rows: 20rem 20rem;
+		grid-template-columns: 22rem 22rem 22rem;
+		grid-gap: 25px;
+		justify-content: center;
+
+		.topics__item {
+			padding: 20px;
+			font-size: 30px;
+			font-family: 'Lato';
+			color: white;
+
+			&-1{
+				background-color: red;
+
+			}
+			&-2{
+			background-color: rgb(161, 133, 133);
+
+
+			}
+			&-3{
+				background-color: rgb(24, 109, 124);
+
+			}
+			&-4{
+				background-color: rgb(100, 143, 60);
+
+			}
+			&-5{
+				background-color: rgb(149, 158, 19);
+
+			}
+			&-6{
+				background-color: rgb(87, 8, 60);
+			}
+		}
+	}
+}
