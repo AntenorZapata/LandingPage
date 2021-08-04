@@ -76,42 +76,6 @@ body {
 body {
   box-sizing: border-box; }
 
-.section-topics {
-  background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -32vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .section-topics .topics__title {
-    text-align: center; }
-  .section-topics .topics__container {
-    margin-top: 5rem;
-    width: 80%;
-    display: grid;
-    grid-template-rows: 20rem 20rem;
-    grid-template-columns: 22rem 22rem 22rem;
-    grid-gap: 25px;
-    justify-content: center; }
-    .section-topics .topics__container .topics__item {
-      padding: 20px;
-      font-size: 30px;
-      font-family: 'Lato';
-      color: white; }
-      .section-topics .topics__container .topics__item-1 {
-        background-color: red; }
-      .section-topics .topics__container .topics__item-2 {
-        background-color: #a18585; }
-      .section-topics .topics__container .topics__item-3 {
-        background-color: #186d7c; }
-      .section-topics .topics__container .topics__item-4 {
-        background-color: #648f3c; }
-      .section-topics .topics__container .topics__item-5 {
-        background-color: #959e13; }
-      .section-topics .topics__container .topics__item-6 {
-        background-color: #57083c; }
-
 .content__button {
   display: flex;
   margin-top: 1.5rem;
