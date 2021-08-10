@@ -92,25 +92,69 @@ body {
     display: grid;
     grid-template-rows: 20rem 20rem;
     grid-template-columns: 22rem 22rem 22rem;
-    grid-gap: 25px;
+    grid-gap: 30px;
     justify-content: center; }
     .section-topics .topics__container .topics__item {
       padding: 20px;
-      font-size: 30px;
-      font-family: 'Lato';
-      color: white; }
-      .section-topics .topics__container .topics__item-1 {
-        background-color: red; }
-      .section-topics .topics__container .topics__item-2 {
-        background-color: #a18585; }
-      .section-topics .topics__container .topics__item-3 {
-        background-color: #186d7c; }
-      .section-topics .topics__container .topics__item-4 {
-        background-color: #648f3c; }
-      .section-topics .topics__container .topics__item-5 {
-        background-color: #959e13; }
-      .section-topics .topics__container .topics__item-6 {
-        background-color: #57083c; }
+      font-size: 30px; }
+      .section-topics .topics__container .topics__item-1, .section-topics .topics__container .topics__item-2, .section-topics .topics__container .topics__item-3, .section-topics .topics__container .topics__item-4, .section-topics .topics__container .topics__item-5, .section-topics .topics__container .topics__item-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .section-topics .topics__container .topics__item-1 .hr, .section-topics .topics__container .topics__item-2 .hr, .section-topics .topics__container .topics__item-3 .hr, .section-topics .topics__container .topics__item-4 .hr, .section-topics .topics__container .topics__item-5 .hr, .section-topics .topics__container .topics__item-6 .hr {
+          border: none;
+          background-color: #4d6164df;
+          height: 1.3px;
+          width: 28%;
+          margin-top: 35px;
+          box-sizing: content-box;
+          display: block; }
+      .section-topics .topics__container .topics__item-1 .microscope {
+        width: 150px; }
+      .section-topics .topics__container .topics__item-1 .topic-description {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #666; }
+      .section-topics .topics__container .topics__item-2 .microscope {
+        width: 150px; }
+      .section-topics .topics__container .topics__item-2 .topic-description {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #666; }
+      .section-topics .topics__container .topics__item-3 .microscope {
+        width: 150px; }
+      .section-topics .topics__container .topics__item-3 .topic-description {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #666; }
+      .section-topics .topics__container .topics__item-4 .microscope {
+        width: 150px; }
+      .section-topics .topics__container .topics__item-4 .topic-description {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #666; }
+      .section-topics .topics__container .topics__item-5 .microscope {
+        width: 150px; }
+      .section-topics .topics__container .topics__item-5 .topic-description {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #666; }
+      .section-topics .topics__container .topics__item-6 .microscope {
+        width: 150px; }
+      .section-topics .topics__container .topics__item-6 .topic-description {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #666; }
+
+.saturate {
+  filter: saturate(30); }
 
 .content__button {
   display: flex;
