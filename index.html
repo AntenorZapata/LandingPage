@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
     <title>Guia Nutricional Para Gestantes</title>
@@ -41,18 +42,26 @@
     <main>
       <section class="section-topics">
         <div class="topics__title">
-          <h2>Topics Covered In The Book</h2>
+          <h2 data-aos="fade">Topics Covered In The Book</h2>
           <p>Lorem ipsum dolor sit amet consectetur adip scing elit mauris</p>
         </div>
         <div class="topics__container">
-          <div class="topics__item-1">topic 1</div>
-          <div class="topics__item-2">topic 2</div>
-          <div class="topics__item-3">topic 3</div>
-          <div class="topics__item-4">topic 3</div>
-          <div class="topics__item-5">topic 3</div>
-          <div class="topics__item-6">topic 3</div>
+          <div class="topics__item-1" data-aos="fade-right">topic 1</div>
+          <div class="topics__item-2" data-aos="fade-down">topic 2</div>
+          <div class="topics__item-3" data-aos="fade-left">topic 3</div>
+          <div class="topics__item-4" data-aos="fade-right">topic 3</div>
+          <div class="topics__item-5" data-aos="fade-up">topic 3</div>
+          <div class="topics__item-6" data-aos="fade-left">topic 3</div>
         </div>
       </section>
     </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 130,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
