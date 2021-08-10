@@ -57,11 +57,7 @@
 }
 
 .section__features {
-	padding: 15rem 0;
-
 	background-image: linear-gradient(to right bottom, $primary-pink, $primary-green), url('/img/features.jpg');
 	background-size: cover;
-	// background-position: top;
-	// position: relative;
-	// padding-top: .1rem;
+	padding: 15rem 0;
 }

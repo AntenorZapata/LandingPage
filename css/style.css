@@ -75,13 +75,26 @@ body {
 body {
   box-sizing: border-box; }
 
-.feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
-  padding: 2.5rem;
-  text-align: center;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+.row {
+  display: grid;
+  grid-template-rows: 20rem;
+  grid-template-columns: 15rem 15rem 15rem 15rem;
+  grid-gap: 5rem;
+  justify-content: center; }
+  .row .col-1, .row .col-2, .row .col-3, .row .col-4 {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column; }
+    .row .col-1 .feature-box__icon, .row .col-2 .feature-box__icon, .row .col-3 .feature-box__icon, .row .col-4 .feature-box__icon {
+      font-size: 3rem; }
+    .row .col-1 .feature-box__description, .row .col-2 .feature-box__description, .row .col-3 .feature-box__description, .row .col-4 .feature-box__description {
+      font-size: 1.2rem; }
 
 .section-topics {
   background-color: #f7f7f7;
@@ -126,9 +139,9 @@ body {
           width: 120px; }
 
 .section__features {
-  padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #cabec6fa, rgba(169, 197, 181, 0.856)), url("/img/features.jpg");
-  background-size: cover; }
+  background-size: cover;
+  padding: 15rem 0; }
 
 .content__button {
   display: flex;
