@@ -62,9 +62,8 @@ body {
   font-family: 'Lato';
   display: inline-block;
   color: #4d6164df;
-  transition: all .2s; }
-  .topics__title h2:hover {
-    transform: scale(1.05); }
+  transition: all .2s;
+  word-spacing: 3px; }
 
 *,
 *::after,
@@ -110,43 +109,35 @@ body {
           margin-top: 35px;
           box-sizing: content-box;
           display: block; }
-      .section-topics .topics__container .topics__item-1 .microscope {
-        width: 150px; }
+        .section-topics .topics__container .topics__item-1 img, .section-topics .topics__container .topics__item-2 img, .section-topics .topics__container .topics__item-3 img, .section-topics .topics__container .topics__item-4 img, .section-topics .topics__container .topics__item-5 img, .section-topics .topics__container .topics__item-6 img {
+          width: 120px; }
       .section-topics .topics__container .topics__item-1 .topic-description {
         margin-top: 2rem;
         font-size: 1.2rem;
         text-align: center;
         color: #666; }
-      .section-topics .topics__container .topics__item-2 .microscope {
-        width: 150px; }
       .section-topics .topics__container .topics__item-2 .topic-description {
         margin-top: 2rem;
         font-size: 1.2rem;
         text-align: center;
-        color: #666; }
-      .section-topics .topics__container .topics__item-3 .microscope {
-        width: 150px; }
+        color: #666;
+        display: block; }
       .section-topics .topics__container .topics__item-3 .topic-description {
         margin-top: 2rem;
         font-size: 1.2rem;
         text-align: center;
-        color: #666; }
-      .section-topics .topics__container .topics__item-4 .microscope {
-        width: 150px; }
+        color: #666;
+        display: block; }
       .section-topics .topics__container .topics__item-4 .topic-description {
         margin-top: 2rem;
         font-size: 1.2rem;
         text-align: center;
         color: #666; }
-      .section-topics .topics__container .topics__item-5 .microscope {
-        width: 150px; }
       .section-topics .topics__container .topics__item-5 .topic-description {
         margin-top: 2rem;
         font-size: 1.2rem;
         text-align: center;
         color: #666; }
-      .section-topics .topics__container .topics__item-6 .microscope {
-        width: 150px; }
       .section-topics .topics__container .topics__item-6 .topic-description {
         margin-top: 2rem;
         font-size: 1.2rem;

@@ -40,12 +40,13 @@
 					display: block;
 
 				}
+
+				img {
+					width: 120px;
+				}
 			}
 
 			&-1{
-				.microscope {
-					width: 150px;
-				}
 
 				.topic-description {
 					margin-top: 2rem;
@@ -57,9 +58,6 @@
 			&-2{
 
 
-				.microscope {
-					width: 150px;
-				}
 
 
 				.topic-description {
@@ -67,15 +65,13 @@
 					font-size: 1.2rem;
 					text-align: center;
 					color: $text-grey;
+					display: block;
+
 				}
 			}
 			&-3{
 
 
-				.microscope {
-					width: 150px;
-				}
-
 
 
 				.topic-description {
@@ -83,14 +79,11 @@
 					font-size: 1.2rem;
 					text-align: center;
 					color: $text-grey;
+					display: block;
 				}
 			}
 			&-4{
 
-
-				.microscope {
-					width: 150px;
-				}
 
 
 
@@ -105,9 +98,6 @@
 			&-5{
 
 
-				.microscope {
-					width: 150px;
-				}
 
 
 
@@ -121,9 +111,6 @@
 			}
 			&-6{
 
-				.microscope {
-					width: 150px;
-				}
 
 
 				.topic-description {
