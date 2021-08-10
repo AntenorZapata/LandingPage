@@ -30,6 +30,13 @@
 				align-items: center;
 				flex-direction: column;
 
+				.topic-description {
+					margin-top: 2rem;
+					font-size: 1.2rem;
+					text-align: center;
+					color: $text-grey;
+				}
+
 				.hr {
 					border: none;
 					background-color: $color-text;
@@ -43,81 +50,6 @@
 
 				img {
 					width: 120px;
-				}
-			}
-
-			&-1{
-
-				.topic-description {
-					margin-top: 2rem;
-					font-size: 1.2rem;
-					text-align: center;
-					color: $text-grey;
-				}
-			}
-			&-2{
-
-
-
-
-				.topic-description {
-					margin-top: 2rem;
-					font-size: 1.2rem;
-					text-align: center;
-					color: $text-grey;
-					display: block;
-
-				}
-			}
-			&-3{
-
-
-
-
-				.topic-description {
-					margin-top: 2rem;
-					font-size: 1.2rem;
-					text-align: center;
-					color: $text-grey;
-					display: block;
-				}
-			}
-			&-4{
-
-
-
-
-				.topic-description {
-					margin-top: 2rem;
-					font-size: 1.2rem;
-					text-align: center;
-					color: $text-grey;
-				}
-
-			}
-			&-5{
-
-
-
-
-
-				.topic-description {
-					margin-top: 2rem;
-					font-size: 1.2rem;
-					text-align: center;
-					color: $text-grey;
-				}
-
-			}
-			&-6{
-
-
-
-				.topic-description {
-					margin-top: 2rem;
-					font-size: 1.2rem;
-					text-align: center;
-					color: $text-grey;
 				}
 			}
 		}

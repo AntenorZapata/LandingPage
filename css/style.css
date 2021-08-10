@@ -101,6 +101,11 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column; }
+        .section-topics .topics__container .topics__item-1 .topic-description, .section-topics .topics__container .topics__item-2 .topic-description, .section-topics .topics__container .topics__item-3 .topic-description, .section-topics .topics__container .topics__item-4 .topic-description, .section-topics .topics__container .topics__item-5 .topic-description, .section-topics .topics__container .topics__item-6 .topic-description {
+          margin-top: 2rem;
+          font-size: 1.2rem;
+          text-align: center;
+          color: #666; }
         .section-topics .topics__container .topics__item-1 .hr, .section-topics .topics__container .topics__item-2 .hr, .section-topics .topics__container .topics__item-3 .hr, .section-topics .topics__container .topics__item-4 .hr, .section-topics .topics__container .topics__item-5 .hr, .section-topics .topics__container .topics__item-6 .hr {
           border: none;
           background-color: #4d6164df;
@@ -111,38 +116,6 @@ body {
           display: block; }
         .section-topics .topics__container .topics__item-1 img, .section-topics .topics__container .topics__item-2 img, .section-topics .topics__container .topics__item-3 img, .section-topics .topics__container .topics__item-4 img, .section-topics .topics__container .topics__item-5 img, .section-topics .topics__container .topics__item-6 img {
           width: 120px; }
-      .section-topics .topics__container .topics__item-1 .topic-description {
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #666; }
-      .section-topics .topics__container .topics__item-2 .topic-description {
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #666;
-        display: block; }
-      .section-topics .topics__container .topics__item-3 .topic-description {
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #666;
-        display: block; }
-      .section-topics .topics__container .topics__item-4 .topic-description {
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #666; }
-      .section-topics .topics__container .topics__item-5 .topic-description {
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #666; }
-      .section-topics .topics__container .topics__item-6 .topic-description {
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #666; }
 
 .saturate {
   filter: saturate(30); }
