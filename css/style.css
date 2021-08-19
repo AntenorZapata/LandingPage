@@ -77,10 +77,12 @@ body {
 
 .row {
   display: grid;
-  grid-template-rows: 20rem;
+  grid-template-rows: 16rem;
   grid-template-columns: 15rem 15rem 15rem 15rem;
   grid-gap: 5rem;
-  justify-content: center; }
+  justify-content: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
   .row .col-1, .row .col-2, .row .col-3, .row .col-4 {
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 1.5rem;
@@ -98,8 +100,8 @@ body {
 
 .section-topics {
   background-color: #f7f7f7;
-  padding: 27rem 10rem 10rem;
-  margin-top: -32vh;
+  padding: 15rem 10rem 8rem;
+  margin-top: -15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

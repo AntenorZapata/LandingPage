@@ -1,9 +1,11 @@
 .row {
 	display: grid;
-	grid-template-rows: 20rem;
+	grid-template-rows: 16rem;
 	grid-template-columns: 15rem 15rem 15rem 15rem;
 	grid-gap: 5rem;
 	justify-content: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 
 
 	.col-1, .col-2, .col-3, .col-4 {
