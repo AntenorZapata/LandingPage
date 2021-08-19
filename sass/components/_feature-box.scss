@@ -1,4 +1,4 @@
-.row {
+.feature {
 	display: grid;
 	grid-template-rows: 16rem;
 	grid-template-columns: 15rem 15rem 15rem 15rem;
@@ -7,7 +7,7 @@
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 
-	.col-1, .col-2, .col-3, .col-4 {
+	.colu-1, .colu-2, .colu-3, .colu-4 {
 		background-color: rgba(rgb(255, 255, 255), .5);
 		font-size: 1.5rem;
 		padding: 2.5rem;

@@ -7,6 +7,10 @@ body {
 	padding: 1.8rem;
 }
 
+main {
+	background-color: $light-grey-1;
+}
+
 .content {
 	display: flex;
 	justify-content: space-around;

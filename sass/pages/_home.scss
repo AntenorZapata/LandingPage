@@ -60,10 +60,12 @@
 	background-image: linear-gradient(to right bottom, $primary-pink, $primary-green), url('/img/features.jpg');
 	background-size: cover;
 	padding: 12rem 0;
+	position: relative;
 
-	transform: skewY(-6deg);
+
+	transform: skewY(-7deg);
 
 	& > * {
-	transform: skewY(6deg);
+	transform: skewY(7deg);
 	}
 }

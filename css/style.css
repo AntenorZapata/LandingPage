@@ -15,6 +15,9 @@ body {
   line-height: 1.7;
   padding: 1.8rem; }
 
+main {
+  background-color: #f7f7f7; }
+
 .content {
   display: flex;
   justify-content: space-around;
@@ -75,7 +78,7 @@ body {
 body {
   box-sizing: border-box; }
 
-.row {
+.feature {
   display: grid;
   grid-template-rows: 16rem;
   grid-template-columns: 15rem 15rem 15rem 15rem;
@@ -83,7 +86,7 @@ body {
   justify-content: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
-  .row .col-1, .row .col-2, .row .col-3, .row .col-4 {
+  .feature .colu-1, .feature .colu-2, .feature .colu-3, .feature .colu-4 {
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 1.5rem;
     padding: 2.5rem;
@@ -94,10 +97,34 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.274); }
-    .row .col-1 .feature-box__icon, .row .col-2 .feature-box__icon, .row .col-3 .feature-box__icon, .row .col-4 .feature-box__icon {
+    .feature .colu-1 .feature-box__icon, .feature .colu-2 .feature-box__icon, .feature .colu-3 .feature-box__icon, .feature .colu-4 .feature-box__icon {
       font-size: 3rem; }
-    .row .col-1 .feature-box__description, .row .col-2 .feature-box__description, .row .col-3 .feature-box__description, .row .col-4 .feature-box__description {
+    .feature .colu-1 .feature-box__description, .feature .colu-2 .feature-box__description, .feature .colu-3 .feature-box__description, .feature .colu-4 .feature-box__description {
       font-size: 1.2rem; }
+
+#readers-testimonials {
+  padding: 40px 0; }
+
+.testimonial img {
+  max-width: 1;
+  margin: 0 auto 0 auto;
+  border: 2px solid white;
+  padding: 5px;
+  margin-bottom: 13px; }
+
+.testimonial blockquote {
+  border: 0;
+  font-family: tahoma;
+  font-size: italic;
+  color: white;
+  padding: 5px 150px; }
+  .testimonial blockquote::before, .testimonial blockquote::after {
+    font-size: 80px;
+    font-size: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute; }
 
 .section-topics {
   background-color: #f7f7f7;
@@ -145,9 +172,10 @@ body {
   background-image: linear-gradient(to right bottom, #cabec6fa, rgba(169, 197, 181, 0.856)), url("/img/features.jpg");
   background-size: cover;
   padding: 12rem 0;
-  transform: skewY(-6deg); }
+  position: relative;
+  transform: skewY(-7deg); }
   .section__features > * {
-    transform: skewY(6deg); }
+    transform: skewY(7deg); }
 
 .content__button {
   display: flex;

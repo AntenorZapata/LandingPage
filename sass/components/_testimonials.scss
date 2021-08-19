@@ -1,0 +1,26 @@
+#readers-testimonials {
+	padding: 40px 0;
+
+}
+
+.testimonial img {
+	max-width: 1;
+	margin: 0 auto 0 auto;
+	border: 2px solid white;
+	padding: 5px;
+	margin-bottom: 13px;
+}
+
+.testimonial blockquote {
+	border: 0;
+	font-family: tahoma;
+	font-size: italic;
+	color: white;
+	padding: 5px 150px;
+
+}
+
+.testimonial blockquote::before, .testimonial blockquote::after {
+
+
+}
