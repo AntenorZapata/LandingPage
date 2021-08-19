@@ -22,7 +22,7 @@ body {
   margin: 13rem auto; }
   .content .content__title {
     background: -webkit-linear-gradient(#88597bef, rgba(49, 88, 66, 0.651));
-    color: #4d6164df;
+    color: #4d6164;
     -webkit-background-clip: text;
     -moz-background-clip: border-box;
     background-clip: transparent;
@@ -61,7 +61,7 @@ body {
   font-weight: 700;
   font-family: 'Lato';
   display: inline-block;
-  color: #4d6164df;
+  color: #4d6164;
   transition: all .2s;
   word-spacing: 3px; }
 
@@ -92,7 +92,8 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     justify-content: flex-start;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.274); }
     .row .col-1 .feature-box__icon, .row .col-2 .feature-box__icon, .row .col-3 .feature-box__icon, .row .col-4 .feature-box__icon {
       font-size: 3rem; }
     .row .col-1 .feature-box__description, .row .col-2 .feature-box__description, .row .col-3 .feature-box__description, .row .col-4 .feature-box__description {
@@ -100,7 +101,7 @@ body {
 
 .section-topics {
   background-color: #f7f7f7;
-  padding: 15rem 10rem 8rem;
+  padding: 15rem 10rem 7rem;
   margin-top: -15vh;
   display: flex;
   flex-direction: column;
@@ -131,7 +132,7 @@ body {
           color: #666; }
         .section-topics .topics__container .topics__item-1 .hr, .section-topics .topics__container .topics__item-2 .hr, .section-topics .topics__container .topics__item-3 .hr, .section-topics .topics__container .topics__item-4 .hr, .section-topics .topics__container .topics__item-5 .hr, .section-topics .topics__container .topics__item-6 .hr {
           border: none;
-          background-color: #4d6164df;
+          background-color: #4d6164;
           height: 1.3px;
           width: 28%;
           margin-top: 35px;
@@ -143,7 +144,10 @@ body {
 .section__features {
   background-image: linear-gradient(to right bottom, #cabec6fa, rgba(169, 197, 181, 0.856)), url("/img/features.jpg");
   background-size: cover;
-  padding: 15rem 0; }
+  padding: 12rem 0;
+  transform: skewY(-6deg); }
+  .section__features > * {
+    transform: skewY(6deg); }
 
 .content__button {
   display: flex;
